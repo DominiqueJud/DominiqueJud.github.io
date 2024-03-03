@@ -15,23 +15,38 @@ header {
     padding: 50px 0; /* Adjust as needed */
 }
 
-/* Style header image */
-header img {
-	position: fixed; /* Position relative to the viewport */
-    top: 10vh; /* 10% of the viewport height from the top edge */
-    left: 10vw; /* 10% of the viewport width from the left edge */
-    height: 50vh; /* 50% of the viewport height */
-	width: auto; /* auto scaling */
-    display: block;
-}
 
-/* Center main content vertically and horizontally */
+}
 main {
-    text-align: center;
-    padding: 50px 0; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Style text content */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow content to wrap if not enough space */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center content horizontally */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.image-wrapper {
+    flex: 0 0 50%; /* Image takes up half of the available width */
+    max-width: 50%; /* Limit image width */
+}
+
+.text-wrapper {
+    flex: 0 0 50%; /* Text takes up half of the available width */
+    max-width: 50%; /* Limit text width */
+}
+
+.icons {
+    align-self: flex-end; /* Align icons to the bottom */
+}
+/* Center main content vertically and horizontally */
+
 h2 {
     font-size: 24px;
     margin-bottom: 20px; /* Add space below */
