@@ -38,8 +38,12 @@ header {
 .icons {
     order: 3;
 }
-.portrait img{
+.portrait img {
 	height: 50vh;
+	width: auto;
+}
+.portrait img {
+	height: 100px;
 	width: auto;
 }
 /* Center main content vertically and horizontally */
