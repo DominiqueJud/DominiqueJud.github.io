@@ -22,12 +22,12 @@ header {
     align-items: center; /* Center content horizontally */
 }
 
-.portrait, .text-wrapper, .icons {
+.Portrait, .text-wrapper, .icons {
     margin-bottom: 20px; /* Add spacing between sections */
     border: 1px solid #ccc; /* Optional: Add border for visualization */
 }
 
-.portrait {
+.Portrait {
    order: 1;
 }
 
@@ -38,12 +38,8 @@ header {
 .icons {
     order: 3;
 }
-.portrait img {
+.Portrait img {
 	height: 50vh;
-	width: auto;
-}
-.portrait img {
-	height: 100px;
 	width: auto;
 }
 /* Center main content vertically and horizontally */
