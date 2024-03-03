@@ -16,50 +16,31 @@ header {
 }
 
 
-}
-main {
-	height: 70vh; 
-	width: auto; 
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-	position: fixed; /* Position relative to the viewport */
-    top: 10vh; /* 10% of the viewport height from the top edge */
-    left: 10vw; /* 10% of the viewport width from the left edge */
+    flex-direction: column; /* Arrange sections from top to bottom */
+    align-items: center; /* Center content horizontally */
 }
 
-main img {
-	
-    height: 50vh; 
-	width: auto; 
-    display: block;
-    margin: 0 auto; /* Center horizontally */
-    position: fixed; /* Position relative to the viewport */
-    top: 10vh; /* 10% of the viewport height from the top edge */
-    left: 10vw; /* 10% of the viewport width from the left edge */
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Allow content to wrap if not enough space */
-    align-items: flex-start; /* Align items to the top */
-    justify-content: center; /* Center content horizontally */
+.portrait, .text-wrapper, .icons {
     margin-bottom: 20px; /* Add spacing between sections */
+    border: 1px solid #ccc; /* Optional: Add border for visualization */
 }
 
-.image-wrapper {
-    flex: 0 0 50%; /* Image takes up half of the available width */
-    max-width: 50%; /* Limit image width */
+.portrait {
+   order: 1;
 }
 
 .text-wrapper {
-    flex: 0 0 50%; /* Text takes up half of the available width */
-    max-width: 50%; /* Limit text width */
+    order: 2;
 }
 
 .icons {
-    align-self: flex-end; /* Align icons to the bottom */
+    order: 3;
+}
+.portrait img{
+	height: 50vh 
+	width: auto
 }
 /* Center main content vertically and horizontally */
 
