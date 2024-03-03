@@ -23,6 +23,17 @@ main {
     align-items: center;
 }
 
+main img {
+	
+    height: 50vh; 
+	width: auto; 
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    position: fixed; /* Position relative to the viewport */
+    top: 10vh; /* 10% of the viewport height from the top edge */
+    left: 10vw; /* 10% of the viewport width from the left edge */
+}
+
 .content {
     display: flex;
     flex-direction: row;
