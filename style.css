@@ -18,9 +18,14 @@ header {
 
 }
 main {
+	height: 70vh; 
+	width: auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
+	position: fixed; /* Position relative to the viewport */
+    top: 10vh; /* 10% of the viewport height from the top edge */
+    left: 10vw; /* 10% of the viewport width from the left edge */
 }
 
 main img {
